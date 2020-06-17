@@ -1,0 +1,23 @@
+from .base import *
+
+
+DEBUG = False
+SERVE_MEDIA = False
+
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = (
+    'app-version',
+    'content-type',
+    'authorization'
+)
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+    }
+}
