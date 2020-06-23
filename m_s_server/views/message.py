@@ -15,15 +15,16 @@ class MessageDestroyApi(generics.DestroyAPIView):
     queryset = message_service.get_all_messages()
 
 
-class MessageListByReceiverApi(generics.ListAPIView):
+class MessageUserListApi(generics.ListAPIView):
     permission_classes = (permissions.IsAuthenticated,)
     serializer_class = message_serializer.MessageSerializer
 
     def get_queryset(self):
-        queryset = message_service.get_messages_by_receiver(self.request.data['receiver'])
+        user_id = self.request.user.id
+        queryset = message_service.get_user_messages(user_id)
         return queryset
 
 
 message_list_create_api = MessageListCreateApi.as_view()
 message_destroy_api = MessageDestroyApi.as_view()
-message_list_by_receiver_api = MessageListByReceiverApi.as_view()
+message_user_list_api = MessageUserListApi.as_view()

@@ -15,9 +15,9 @@ CORS_ALLOW_HEADERS = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
+        'NAME': 'messaging_system',
+        'USER': 'messaging_system_admin',
+        'PASSWORD': 'Aa123456',
+        'HOST': ''
     }
 }

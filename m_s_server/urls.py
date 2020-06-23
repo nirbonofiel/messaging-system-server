@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url
-from django.urls import path, include
+from django.urls import include
 
 from m_s_server.api_urls import api_urlpatterns
 
