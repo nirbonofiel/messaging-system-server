@@ -18,6 +18,6 @@ DATABASES = {
         'NAME': 'messaging_system',
         'USER': 'messaging_system_admin',
         'PASSWORD': 'Aa123456',
-        'HOST': ''
+        'HOST': 'localhost',
     }
 }
