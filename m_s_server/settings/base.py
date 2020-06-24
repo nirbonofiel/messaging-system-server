@@ -5,7 +5,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'mf!ip#(li2lifxd_oa*C49z!)!^v9!+o#*x^moy2j57taw0f6f'
-
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -100,5 +99,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 APPEND_SLASH = False
+
 
 
