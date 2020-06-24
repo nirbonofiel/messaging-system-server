@@ -1,5 +1,5 @@
 from .base import *
-
+import django_heroku
 
 DEBUG = False
 SERVE_MEDIA = False
@@ -21,3 +21,6 @@ DATABASES = {
         'HOST': 'localhost',
     }
 }
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
