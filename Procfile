@@ -1,1 +1,1 @@
-web: gunicorn messaging-system-server.wsgi
+web: gunicorn m_s_server.wsgi
