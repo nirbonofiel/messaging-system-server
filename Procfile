@@ -1,1 +1,1 @@
-web: gunicorn m_s_server:application
+web: gunicorn m_s_server
