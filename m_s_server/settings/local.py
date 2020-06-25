@@ -3,7 +3,6 @@ from .base import *
 DEBUG = False
 SERVE_MEDIA = True
 
-ALLOWED_HOSTS = ['*']
 ALLOWED_METHODS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_HEADERS = (
