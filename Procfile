@@ -1,1 +1,1 @@
-web: gunicorn messaging-system-server
+web: gunicorn m_s_server:application

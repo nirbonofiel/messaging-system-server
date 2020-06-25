@@ -1,3 +1,5 @@
+import django_heroku
+
 from .base import *
 
 
@@ -23,3 +25,6 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
