@@ -1,7 +1,8 @@
 from .base import *
+import django_heroku
 
 DEBUG = False
-SERVE_MEDIA = True
+SERVE_MEDIA = False
 
 ALLOWED_HOSTS = ['*']
 ALLOWED_METHODS = ['*']
@@ -15,10 +16,12 @@ CORS_ALLOW_HEADERS = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'messaging_system_dev',
+        'NAME': 'messaging_system',
         'USER': 'messaging_system_admin',
         'PASSWORD': 'Aa123456',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
     }
 }
 
+# Activate Django-Heroku.
+django_heroku.settings(locals())
