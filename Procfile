@@ -1,1 +1,1 @@
-web: gunicorn messaging-system-server --debug --log-level debug --preload
+web: gunicorn messaging-system-server 
