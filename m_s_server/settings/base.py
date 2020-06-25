@@ -50,7 +50,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'm_s_server.wsgi.application'
 
 CORS_ALLOW_HEADERS = (
