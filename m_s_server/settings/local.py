@@ -26,7 +26,6 @@ DATABASES = {
     }
 }
 
-WSGI_APPLICATION = 'm_s_server.wsgi.application'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
