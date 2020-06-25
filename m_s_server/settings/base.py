@@ -54,6 +54,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'm_s_server.wsgi.application'
 
+CORS_ALLOW_HEADERS = (
+    'app-version',
+    'content-type',
+    'authorization'
+)
+
 # REST FRAMEWORK
 REST_FRAMEWORK = {
     'DEFAULT_PARSER_CLASSES': (
