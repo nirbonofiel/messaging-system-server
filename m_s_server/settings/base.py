@@ -5,8 +5,8 @@ from django.utils.translation import gettext_lazy as _
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
-ALLOWED_HOSTS = ['messaging-system-server.herokuapp.com/']
+SECRET_KEY = '637a07d910d8330df9ed954d3a7934b9201b0c0b5900345f'
+ALLOWED_HOSTS = []
 
 # Application definition
 
