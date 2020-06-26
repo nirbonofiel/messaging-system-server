@@ -4,8 +4,6 @@ import django_heroku
 DEBUG = False
 SERVE_MEDIA = False
 
-ALLOWED_HOSTS = ['*']
-ALLOWED_METHODS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_HEADERS = (
     'app-version',

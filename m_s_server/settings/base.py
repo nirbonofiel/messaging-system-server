@@ -5,7 +5,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '637a07d910d8330df9ed954d3a7934b9201b0c0b5900345f'
-ALLOWED_HOSTS = ['messaging-system-server.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+ALLOWED_METHODS = ['*']
 
 # Application definition
 

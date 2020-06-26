@@ -1,9 +1,9 @@
-import django_heroku
+
 
 from .base import *
 
 
-DEBUG = False
+DEBUG = True
 SERVE_MEDIA = True
 
 
@@ -26,5 +26,4 @@ DATABASES = {
     }
 }
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
+
