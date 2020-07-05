@@ -10,8 +10,9 @@ class MessageListCreateApi(generics.ListCreateAPIView):
     queryset = message_service.get_all_messages()
 
 
-class MessageDestroyApi(generics.DestroyAPIView):
+class MessageRetrieveDestroyApi(generics.RetrieveDestroyAPIView):
     permission_classes = (permissions.IsAuthenticated,)
+    serializer_class = message_serializer.MessageSerializer
     queryset = message_service.get_all_messages()
 
 
@@ -26,5 +27,5 @@ class MessageUserListApi(generics.ListAPIView):
 
 
 message_list_create_api = MessageListCreateApi.as_view()
-message_destroy_api = MessageDestroyApi.as_view()
+message_retrieve_destroy_api = MessageRetrieveDestroyApi.as_view()
 message_user_list_api = MessageUserListApi.as_view()
